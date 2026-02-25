@@ -1,0 +1,660 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Listado de etiquetas en HTML5" />
+    <title>Etiquetas HTML (vigentes + obsoletas)</title>
+
+    <style>
+      :root {
+        color-scheme: light dark;
+      }
+      body {
+        font-family:
+          system-ui,
+          -apple-system,
+          Segoe UI,
+          Roboto,
+          Ubuntu,
+          Cantarell,
+          Noto Sans,
+          sans-serif;
+        line-height: 1.45;
+        margin: 24px;
+      }
+      header {
+        margin-bottom: 24px;
+      }
+      nav ul {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 12px 18px;
+        padding-left: 18px;
+      }
+      section {
+        margin-top: 28px;
+        padding-top: 12px;
+        border-top: 1px solid rgba(127, 127, 127, 0.35);
+      }
+      h2 {
+        margin: 0 0 10px;
+      }
+      .hint {
+        opacity: 0.85;
+      }
+      dl {
+        margin: 0;
+      }
+      dt {
+        margin-top: 10px;
+        font-weight: 700;
+      }
+      dd {
+        margin: 4px 0 0 18px;
+        opacity: 0.95;
+      }
+      code {
+        font-family:
+          ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas,
+          "Liberation Mono", "Courier New", monospace;
+      }
+      .obsolete {
+        border-left: 4px solid #b34;
+        padding-left: 12px;
+      }
+      .tag {
+        display: inline-block;
+        min-width: 120px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <header>
+      <h1>Etiquetas HTML — Documento maestro</h1>
+      <p class="hint">
+        Organizado por funcionalidad. Dentro de cada sección: orden A–Z. Incluye
+        una sección final de etiquetas obsoletas (no usar).
+      </p>
+
+      <nav aria-label="Índice">
+        <ul>
+          <li><a href="#documento">Documento</a></li>
+          <li><a href="#metadata">Metadata</a></li>
+          <li><a href="#secciones">Seccionamiento</a></li>
+          <li><a href="#texto">Contenido de texto</a></li>
+          <li><a href="#inline">Semántica inline</a></li>
+          <li><a href="#multimedia">Multimedia</a></li>
+          <li><a href="#embebido">Embebidos</a></li>
+          <li><a href="#tablas">Tablas</a></li>
+          <li><a href="#formularios">Formularios</a></li>
+          <li><a href="#interactivos">Interactivos</a></li>
+          <li><a href="#scripting">Scripting</a></li>
+          <li><a href="#obsoletas">Obsoletas (no usar)</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Documento -->
+    <section id="documento">
+      <h2>Documento</h2>
+      <dl>
+        <dt><code class="tag">&lt;!doctype html&gt;</code></dt>
+        <dd>Declara HTML moderno (modo estándar en el navegador).</dd>
+
+        <dt><code class="tag">&lt;body&gt;</code></dt>
+        <dd>Contenido visible del documento.</dd>
+
+        <dt><code class="tag">&lt;html&gt;</code></dt>
+        <dd>Elemento raíz del documento.</dd>
+      </dl>
+    </section>
+
+    <!-- Metadata -->
+    <section id="metadata">
+      <h2>Metadata</h2>
+      <dl>
+        <dt><code class="tag">&lt;base&gt;</code></dt>
+        <dd>Define URL base para enlaces/recursos relativos.</dd>
+
+        <dt><code class="tag">&lt;head&gt;</code></dt>
+        <dd>Contenedor de metadata: títulos, scripts, estilos, meta tags.</dd>
+
+        <dt><code class="tag">&lt;link&gt;</code></dt>
+        <dd>Vincula recursos externos (CSS, iconos, preloads, etc.).</dd>
+
+        <dt><code class="tag">&lt;meta&gt;</code></dt>
+        <dd>Metadata (charset, viewport, SEO, etc.).</dd>
+
+        <dt><code class="tag">&lt;style&gt;</code></dt>
+        <dd>CSS embebido.</dd>
+
+        <dt><code class="tag">&lt;title&gt;</code></dt>
+        <dd>Título de la pestaña/ventana.</dd>
+      </dl>
+    </section>
+
+    <!-- Seccionamiento -->
+    <section id="secciones">
+      <h2>Seccionamiento (estructura del contenido)</h2>
+      <dl>
+        <dt><code class="tag">&lt;address&gt;</code></dt>
+        <dd>
+          Información de contacto del autor/organización (del contenido
+          cercano).
+        </dd>
+
+        <dt><code class="tag">&lt;article&gt;</code></dt>
+        <dd>
+          Contenido autocontenido (post, noticia, tarjeta completa, etc.).
+        </dd>
+
+        <dt><code class="tag">&lt;aside&gt;</code></dt>
+        <dd>Contenido tangencial (sidebar, notas, relacionados).</dd>
+
+        <dt><code class="tag">&lt;footer&gt;</code></dt>
+        <dd>Pie de página o de sección.</dd>
+
+        <dt><code class="tag">&lt;header&gt;</code></dt>
+        <dd>Encabezado de página o sección.</dd>
+
+        <dt><code class="tag">&lt;h1&gt;…&lt;h6&gt;</code></dt>
+        <dd>Títulos jerárquicos.</dd>
+
+        <dt><code class="tag">&lt;hgroup&gt;</code></dt>
+        <dd>Agrupa un título con subtítulo(s) como unidad.</dd>
+
+        <dt><code class="tag">&lt;main&gt;</code></dt>
+        <dd>Contenido principal único de la página.</dd>
+
+        <dt><code class="tag">&lt;nav&gt;</code></dt>
+        <dd>Bloque de navegación.</dd>
+
+        <dt><code class="tag">&lt;section&gt;</code></dt>
+        <dd>Sección temática del documento.</dd>
+      </dl>
+    </section>
+
+    <!-- Contenido de texto (bloques) -->
+    <section id="texto">
+      <h2>Contenido de texto (bloques)</h2>
+      <dl>
+        <dt><code class="tag">&lt;blockquote&gt;</code></dt>
+        <dd>Cita en bloque.</dd>
+
+        <dt><code class="tag">&lt;dd&gt;</code></dt>
+        <dd>Definición/detalle en lista de descripción.</dd>
+
+        <dt><code class="tag">&lt;div&gt;</code></dt>
+        <dd>Contenedor genérico (sin semántica propia).</dd>
+
+        <dt><code class="tag">&lt;dl&gt;</code></dt>
+        <dd>Lista de descripción (términos y definiciones).</dd>
+
+        <dt><code class="tag">&lt;dt&gt;</code></dt>
+        <dd>Término en lista de descripción.</dd>
+
+        <dt><code class="tag">&lt;figure&gt;</code></dt>
+        <dd>
+          Contenido auto contenido (imagen, diagrama, snippet) con posible
+          leyenda.
+        </dd>
+
+        <dt><code class="tag">&lt;figcaption&gt;</code></dt>
+        <dd>Leyenda de <code>&lt;figure&gt;</code>.</dd>
+
+        <dt><code class="tag">&lt;hr&gt;</code></dt>
+        <dd>Separador temático (cambio de tema/escena).</dd>
+
+        <dt><code class="tag">&lt;li&gt;</code></dt>
+        <dd>Ítem de lista.</dd>
+
+        <dt><code class="tag">&lt;menu&gt;</code></dt>
+        <dd>
+          Lista de comandos o acciones (similar a <code>&lt;ul&gt;</code> en
+          muchos casos).
+        </dd>
+
+        <dt><code class="tag">&lt;ol&gt;</code></dt>
+        <dd>Lista ordenada.</dd>
+
+        <dt><code class="tag">&lt;p&gt;</code></dt>
+        <dd>Párrafo.</dd>
+
+        <dt><code class="tag">&lt;pre&gt;</code></dt>
+        <dd>Texto preformateado (preserva espacios y saltos).</dd>
+
+        <dt><code class="tag">&lt;ul&gt;</code></dt>
+        <dd>Lista no ordenada.</dd>
+      </dl>
+    </section>
+
+    <!-- Semántica inline -->
+    <section id="inline">
+      <h2>Semántica inline (dentro del texto)</h2>
+      <dl>
+        <dt><code class="tag">&lt;a&gt;</code></dt>
+        <dd>Enlace (navegación o ancla).</dd>
+
+        <dt><code class="tag">&lt;abbr&gt;</code></dt>
+        <dd>Abreviatura (ideal con <code>title</code> explicativo).</dd>
+
+        <dt><code class="tag">&lt;b&gt;</code></dt>
+        <dd>
+          Resaltado estilístico sin énfasis semántico (úsalo con criterio).
+        </dd>
+
+        <dt><code class="tag">&lt;bdi&gt;</code></dt>
+        <dd>
+          Aísla direccionalidad de texto (útil en idiomas RTL/LTR mezclados).
+        </dd>
+
+        <dt><code class="tag">&lt;bdo&gt;</code></dt>
+        <dd>Fuerza dirección del texto (rtl/ltr).</dd>
+
+        <dt><code class="tag">&lt;br&gt;</code></dt>
+        <dd>Salto de línea dentro de un bloque.</dd>
+
+        <dt><code class="tag">&lt;cite&gt;</code></dt>
+        <dd>Título de obra citada (libro, película, artículo).</dd>
+
+        <dt><code class="tag">&lt;code&gt;</code></dt>
+        <dd>Fragmento de código.</dd>
+
+        <dt><code class="tag">&lt;data&gt;</code></dt>
+        <dd>
+          Asocia un valor legible con un valor “máquina” (<code>value</code>).
+        </dd>
+
+        <dt><code class="tag">&lt;del&gt;</code></dt>
+        <dd>Texto eliminado (edición).</dd>
+
+        <dt><code class="tag">&lt;dfn&gt;</code></dt>
+        <dd>Definición del término.</dd>
+
+        <dt><code class="tag">&lt;em&gt;</code></dt>
+        <dd>Énfasis (importante para lectura y accesibilidad).</dd>
+
+        <dt><code class="tag">&lt;i&gt;</code></dt>
+        <dd>Voz alternativa (términos, pensamientos, tecnicismos).</dd>
+
+        <dt><code class="tag">&lt;ins&gt;</code></dt>
+        <dd>Texto insertado (edición).</dd>
+
+        <dt><code class="tag">&lt;kbd&gt;</code></dt>
+        <dd>Entrada de teclado.</dd>
+
+        <dt><code class="tag">&lt;mark&gt;</code></dt>
+        <dd>Resaltado por relevancia (como “marcador”).</dd>
+
+        <dt><code class="tag">&lt;q&gt;</code></dt>
+        <dd>Cita corta en línea.</dd>
+
+        <dt><code class="tag">&lt;rp&gt;</code></dt>
+        <dd>Paréntesis de ruby como fallback.</dd>
+
+        <dt><code class="tag">&lt;rt&gt;</code></dt>
+        <dd>Anotación ruby (pronunciación).</dd>
+
+        <dt><code class="tag">&lt;ruby&gt;</code></dt>
+        <dd>Marca anotaciones ruby (muy usado en japonés/chino).</dd>
+
+        <dt><code class="tag">&lt;s&gt;</code></dt>
+        <dd>
+          Texto “no relevante/ya no válido” (no es edición como
+          <code>&lt;del&gt;</code>).
+        </dd>
+
+        <dt><code class="tag">&lt;samp&gt;</code></dt>
+        <dd>Salida/ejemplo de un programa.</dd>
+
+        <dt><code class="tag">&lt;small&gt;</code></dt>
+        <dd>Notas, letra chica, aclaraciones.</dd>
+
+        <dt><code class="tag">&lt;span&gt;</code></dt>
+        <dd>Contenedor inline genérico.</dd>
+
+        <dt><code class="tag">&lt;strong&gt;</code></dt>
+        <dd>Importancia fuerte (semántica, no solo “negrita”).</dd>
+
+        <dt><code class="tag">&lt;sub&gt;</code></dt>
+        <dd>Subíndice.</dd>
+
+        <dt><code class="tag">&lt;sup&gt;</code></dt>
+        <dd>Superíndice.</dd>
+
+        <dt><code class="tag">&lt;time&gt;</code></dt>
+        <dd>Fecha/hora (ideal con <code>datetime</code>).</dd>
+
+        <dt><code class="tag">&lt;u&gt;</code></dt>
+        <dd>
+          Anotación no textual (p. ej. “nombre propio” en algunos estilos) — no
+          “subrayar por subrayar”.
+        </dd>
+
+        <dt><code class="tag">&lt;var&gt;</code></dt>
+        <dd>Variable o placeholder.</dd>
+
+        <dt><code class="tag">&lt;wbr&gt;</code></dt>
+        <dd>Oportunidad de quiebre de palabra (word break opportunity).</dd>
+      </dl>
+    </section>
+
+    <!-- Multimedia -->
+    <section id="multimedia">
+      <h2>Multimedia</h2>
+      <dl>
+        <dt><code class="tag">&lt;audio&gt;</code></dt>
+        <dd>Audio embebido.</dd>
+
+        <dt><code class="tag">&lt;img&gt;</code></dt>
+        <dd>Imagen (usa <code>alt</code> siempre).</dd>
+
+        <dt><code class="tag">&lt;picture&gt;</code></dt>
+        <dd>Imágenes responsivas (con <code>&lt;source&gt;</code>).</dd>
+
+        <dt><code class="tag">&lt;source&gt;</code></dt>
+        <dd>Fuente alternativa para <code>audio/video/picture</code>.</dd>
+
+        <dt><code class="tag">&lt;track&gt;</code></dt>
+        <dd>
+          Subtítulos/captions para <code>&lt;video&gt;</code> o
+          <code>&lt;audio&gt;</code>.
+        </dd>
+
+        <dt><code class="tag">&lt;video&gt;</code></dt>
+        <dd>Video embebido.</dd>
+      </dl>
+    </section>
+
+    <!-- Embebidos / gráficos -->
+    <section id="embebido">
+      <h2>Embebidos / gráficos</h2>
+      <dl>
+        <dt><code class="tag">&lt;canvas&gt;</code></dt>
+        <dd>Superficie de dibujo (JS).</dd>
+
+        <dt><code class="tag">&lt;embed&gt;</code></dt>
+        <dd>Contenido externo embebido (con cuidado).</dd>
+
+        <dt><code class="tag">&lt;iframe&gt;</code></dt>
+        <dd>Incrusta otra página/documento.</dd>
+
+        <dt><code class="tag">&lt;map&gt;</code></dt>
+        <dd>Mapa de imagen (con <code>&lt;area&gt;</code>).</dd>
+
+        <dt><code class="tag">&lt;object&gt;</code></dt>
+        <dd>Recurso externo embebido (con fallback interno).</dd>
+
+        <dt><code class="tag">&lt;param&gt;</code></dt>
+        <dd><strong>Obsoleta (no usar)</strong>: se lista en “Obsoletas”.</dd>
+
+        <dt><code class="tag">&lt;svg&gt;</code></dt>
+        <dd>SVG inline (elemento de SVG; se usa dentro de HTML).</dd>
+      </dl>
+    </section>
+
+    <!-- Tablas -->
+    <section id="tablas">
+      <h2>Tablas</h2>
+      <dl>
+        <dt><code class="tag">&lt;caption&gt;</code></dt>
+        <dd>Título/leyenda de la tabla.</dd>
+
+        <dt><code class="tag">&lt;col&gt;</code></dt>
+        <dd>Define columna (usado con <code>&lt;colgroup&gt;</code>).</dd>
+
+        <dt><code class="tag">&lt;colgroup&gt;</code></dt>
+        <dd>Agrupa columnas.</dd>
+
+        <dt><code class="tag">&lt;table&gt;</code></dt>
+        <dd>Tabla.</dd>
+
+        <dt><code class="tag">&lt;tbody&gt;</code></dt>
+        <dd>Cuerpo de tabla.</dd>
+
+        <dt><code class="tag">&lt;td&gt;</code></dt>
+        <dd>Celda de datos.</dd>
+
+        <dt><code class="tag">&lt;tfoot&gt;</code></dt>
+        <dd>Pie de tabla.</dd>
+
+        <dt><code class="tag">&lt;th&gt;</code></dt>
+        <dd>Celda encabezado.</dd>
+
+        <dt><code class="tag">&lt;thead&gt;</code></dt>
+        <dd>Encabezado de tabla.</dd>
+
+        <dt><code class="tag">&lt;tr&gt;</code></dt>
+        <dd>Fila de tabla.</dd>
+      </dl>
+    </section>
+
+    <!-- Formularios -->
+    <section id="formularios">
+      <h2>Formularios</h2>
+      <dl>
+        <dt><code class="tag">&lt;button&gt;</code></dt>
+        <dd>Botón (submit/reset/button).</dd>
+
+        <dt><code class="tag">&lt;datalist&gt;</code></dt>
+        <dd>Lista de sugerencias para <code>&lt;input list=""&gt;</code>.</dd>
+
+        <dt><code class="tag">&lt;fieldset&gt;</code></dt>
+        <dd>Agrupa controles relacionados.</dd>
+
+        <dt><code class="tag">&lt;form&gt;</code></dt>
+        <dd>Formulario.</dd>
+
+        <dt><code class="tag">&lt;input&gt;</code></dt>
+        <dd>Control de entrada (muchos <code>type</code>).</dd>
+
+        <dt><code class="tag">&lt;label&gt;</code></dt>
+        <dd>Etiqueta accesible para un control.</dd>
+
+        <dt><code class="tag">&lt;legend&gt;</code></dt>
+        <dd>Título del <code>&lt;fieldset&gt;</code>.</dd>
+
+        <dt><code class="tag">&lt;meter&gt;</code></dt>
+        <dd>Medición dentro de un rango conocido (no progreso).</dd>
+
+        <dt><code class="tag">&lt;optgroup&gt;</code></dt>
+        <dd>Agrupa opciones en <code>&lt;select&gt;</code>.</dd>
+
+        <dt><code class="tag">&lt;option&gt;</code></dt>
+        <dd>Opción en <code>select/datalist</code>.</dd>
+
+        <dt><code class="tag">&lt;output&gt;</code></dt>
+        <dd>Resultado calculado (puede asociarse a un form).</dd>
+
+        <dt><code class="tag">&lt;progress&gt;</code></dt>
+        <dd>Progreso de una tarea.</dd>
+
+        <dt><code class="tag">&lt;select&gt;</code></dt>
+        <dd>Selector de opciones.</dd>
+
+        <dt><code class="tag">&lt;textarea&gt;</code></dt>
+        <dd>Entrada de texto multilínea.</dd>
+      </dl>
+    </section>
+
+    <!-- Interactivos -->
+    <section id="interactivos">
+      <h2>Interactivos / UI</h2>
+      <dl>
+        <dt><code class="tag">&lt;details&gt;</code></dt>
+        <dd>Contenido desplegable.</dd>
+
+        <dt><code class="tag">&lt;dialog&gt;</code></dt>
+        <dd>Diálogo/modal nativo.</dd>
+
+        <dt><code class="tag">&lt;summary&gt;</code></dt>
+        <dd>Encabezado clickable de <code>&lt;details&gt;</code>.</dd>
+
+        <dt><code class="tag">&lt;search&gt;</code></dt>
+        <dd>
+          Contenedor semántico para UI de búsqueda/filtrado (similar a landmark
+          “search”).
+        </dd>
+      </dl>
+    </section>
+
+    <!-- Scripting -->
+    <section id="scripting">
+      <h2>Scripting</h2>
+      <dl>
+        <dt><code class="tag">&lt;noscript&gt;</code></dt>
+        <dd>Contenido alternativo si JS está deshabilitado.</dd>
+
+        <dt><code class="tag">&lt;script&gt;</code></dt>
+        <dd>JavaScript embebido o externo.</dd>
+
+        <dt><code class="tag">&lt;template&gt;</code></dt>
+        <dd>
+          Fragmento HTML no renderizado, útil para clonar con JS/Web Components.
+        </dd>
+      </dl>
+    </section>
+
+    <!-- Obsoletas -->
+    <section id="obsoletas" class="obsolete">
+      <h2>Obsoletas (no usar)</h2>
+      <p class="hint">
+        Estas etiquetas existen por compatibilidad histórica, pero el estándar
+        las marca como obsoletas/no conformes.
+      </p>
+
+      <dl>
+        <dt><code class="tag">&lt;acronym&gt;</code></dt>
+        <dd>Obsoleta. Usa <code>&lt;abbr&gt;</code>.</dd>
+
+        <dt><code class="tag">&lt;applet&gt;</code></dt>
+        <dd>
+          Obsoleta. Usa <code>&lt;embed&gt;</code> o
+          <code>&lt;object&gt;</code>.
+        </dd>
+
+        <dt><code class="tag">&lt;basefont&gt;</code></dt>
+        <dd>Obsoleta. Usa CSS.</dd>
+
+        <dt><code class="tag">&lt;bgsound&gt;</code></dt>
+        <dd>Obsoleta. Usa <code>&lt;audio&gt;</code>.</dd>
+
+        <dt><code class="tag">&lt;big&gt;</code></dt>
+        <dd>
+          Obsoleta. Usa CSS o una etiqueta semántica adecuada (p. ej.
+          <code>&lt;strong&gt;</code> o headings).
+        </dd>
+
+        <dt><code class="tag">&lt;blink&gt;</code></dt>
+        <dd>
+          Obsoleta. Usa CSS animations (si realmente lo necesitas… con
+          misericordia 😅).
+        </dd>
+
+        <dt><code class="tag">&lt;center&gt;</code></dt>
+        <dd>Obsoleta. Usa CSS (<code>text-align</code>, flex, grid).</dd>
+
+        <dt><code class="tag">&lt;dir&gt;</code></dt>
+        <dd>Obsoleta. Usa <code>&lt;ul&gt;</code>.</dd>
+
+        <dt><code class="tag">&lt;font&gt;</code></dt>
+        <dd>Obsoleta. Usa CSS.</dd>
+
+        <dt><code class="tag">&lt;frame&gt;</code></dt>
+        <dd>
+          Obsoleta. Usa <code>&lt;iframe&gt;</code> o composición moderna.
+        </dd>
+
+        <dt><code class="tag">&lt;frameset&gt;</code></dt>
+        <dd>Obsoleta. Usa CSS/layout moderno.</dd>
+
+        <dt><code class="tag">&lt;isindex&gt;</code></dt>
+        <dd>
+          Obsoleta. Usa <code>&lt;form&gt;</code> + <code>&lt;input&gt;</code>.
+        </dd>
+
+        <dt><code class="tag">&lt;keygen&gt;</code></dt>
+        <dd>Obsoleta. Hoy se usa Web Crypto + flujos modernos (según caso).</dd>
+
+        <dt><code class="tag">&lt;listing&gt;</code></dt>
+        <dd>Obsoleta. Usa <code>&lt;pre&gt;&lt;code&gt;</code>.</dd>
+
+        <dt><code class="tag">&lt;marquee&gt;</code></dt>
+        <dd>Obsoleta. Usa CSS animations/transitions.</dd>
+
+        <dt><code class="tag">&lt;menuitem&gt;</code></dt>
+        <dd>Obsoleta. Menú contextual custom con JS.</dd>
+
+        <dt><code class="tag">&lt;multicol&gt;</code></dt>
+        <dd>Obsoleta. Usa CSS columns.</dd>
+
+        <dt><code class="tag">&lt;nextid&gt;</code></dt>
+        <dd>Obsoleta. Usa IDs/UUIDs.</dd>
+
+        <dt><code class="tag">&lt;noembed&gt;</code></dt>
+        <dd>Obsoleta. Usa <code>&lt;object&gt;</code> con fallback.</dd>
+
+        <dt><code class="tag">&lt;noframes&gt;</code></dt>
+        <dd>Obsoleta. Ya no aplica a web moderna.</dd>
+
+        <dt><code class="tag">&lt;nobr&gt;</code></dt>
+        <dd>Obsoleta. Usa CSS (<code>white-space: nowrap</code>).</dd>
+
+        <dt><code class="tag">&lt;param&gt;</code></dt>
+        <dd>
+          Obsoleta. Usa <code>&lt;object data="..."&gt;</code> y atributos
+          adecuados.
+        </dd>
+
+        <dt><code class="tag">&lt;plaintext&gt;</code></dt>
+        <dd>
+          Obsoleta. Se resuelve por MIME (<code>text/plain</code>), no por HTML.
+        </dd>
+
+        <dt><code class="tag">&lt;rb&gt;</code></dt>
+        <dd>
+          Obsoleta. Ruby moderno con
+          <code>&lt;ruby&gt;</code
+          >/<code>&lt;rt&gt;</code>/<code>&lt;rp&gt;</code>.
+        </dd>
+
+        <dt><code class="tag">&lt;rtc&gt;</code></dt>
+        <dd>
+          Obsoleta. Ruby moderno con <code>&lt;ruby&gt;</code> anidado si hace
+          falta.
+        </dd>
+
+        <dt><code class="tag">&lt;spacer&gt;</code></dt>
+        <dd>Obsoleta. Usa CSS (margin/padding/gap).</dd>
+
+        <dt><code class="tag">&lt;strike&gt;</code></dt>
+        <dd>
+          Obsoleta. Usa <code>&lt;del&gt;</code> (edición) o
+          <code>&lt;s&gt;</code> (no relevante).
+        </dd>
+
+        <dt><code class="tag">&lt;tt&gt;</code></dt>
+        <dd>
+          Obsoleta. Usa <code>&lt;code&gt;</code>, <code>&lt;kbd&gt;</code>,
+          <code>&lt;samp&gt;</code> o CSS según intención.
+        </dd>
+
+        <dt><code class="tag">&lt;xmp&gt;</code></dt>
+        <dd>Obsoleta. Usa <code>&lt;pre&gt;&lt;code&gt;</code>.</dd>
+      </dl>
+
+      <p class="hint">
+        Referencia: lista de elementos obsoletos del estándar HTML (WHATWG).
+      </p>
+    </section>
+
+    <footer>
+      <p class="hint">
+        Tip: si lo usas como “chuleta”, lo ideal es abrirlo en el navegador y
+        usar Ctrl/Cmd+F para buscar la etiqueta.
+      </p>
+    </footer>
+  </body>
+</html>

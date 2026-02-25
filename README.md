@@ -11,6 +11,7 @@ Repositorio académico que documenta la estructura formativa, aprendizajes esper
 🔗 Contenidos relacionados con HTML5, CSS, Bootstrap, JavaScript en el navegador y control de versiones.
 
 - [L1 – Fundamentos Desarrollo Web](Fundamentos-Desarrollo-Front-End/Fundamentos-Desarrollo-Web)
+- [L2 – Introducción HTML5](Fundamentos-Desarrollo-Front-End/Introduccion-HTML)
 
 ### Fundamentos de Programación en JavaScript
 
