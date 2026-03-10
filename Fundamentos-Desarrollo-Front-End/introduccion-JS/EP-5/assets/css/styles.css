@@ -1,0 +1,40 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background: #6c8cd5;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+.bloque {
+  padding: 80px 20px;
+  border-bottom: 1px solid #ddd;
+}
+
+#textoMouse {
+  padding: 10px;
+  background: #eee;
+}
+
+/* clase que activaremos con JS */
+#textoMouse.resaltado {
+  background: yellow;
+}
+
+/* botón subir */
+
+#btnUp {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  padding: 10px 15px;
+  border: none;
+  background: #333;
+  color: white;
+  cursor: pointer;
+}

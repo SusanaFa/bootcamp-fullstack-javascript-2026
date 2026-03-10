@@ -1,0 +1,51 @@
+/* estilo base para mobile first 
+(pensado en celulares)*/
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  text-align: center;
+}
+
+h1 {
+  background-color: lightblue;
+  padding: 20px;
+}
+
+/* en mobile dejamos las tarjetas- card apiladas */
+.contenedor {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+.card {
+  background-color: coral;
+  color: white;
+  padding: 30px;
+  width: 90%;
+  margin-bottom: 15px;
+  border-radius: 8px;
+}
+
+/* definir media queries para tablet */
+
+@media (min-width: 768px) {
+  .contenedor {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+
+  .card {
+    background-color: lightseagreen;
+  }
+}
+
+/* definir media queries para desktop */
+
+@media (min-width: 1024px) {
+  .card {
+    width: 25%;
+    background-color: magenta;
+  }
+}

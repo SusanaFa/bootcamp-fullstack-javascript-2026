@@ -1,0 +1,35 @@
+/* Tipografía  */
+body {
+  font-family: "Raleway", sans-serif;
+  background-color: #fdfcff;
+  color: #5c5c5c;
+}
+
+/* Títulos */
+h1,
+h2,
+h3,
+h4,
+h5 {
+  font-weight: 600;
+}
+
+.text-primary {
+  color: #a8c0ff !important;
+}
+
+.text-success {
+  color: #b8f2e6 !important;
+}
+
+.text-danger {
+  color: #ffb3c6 !important;
+}
+
+.bg-primary {
+  background-color: #a8c0ff !important;
+}
+
+.bg-dark {
+  background-color: #6d6875 !important;
+}
