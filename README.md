@@ -22,6 +22,8 @@ Repositorio académico que documenta la estructura formativa, aprendizajes esper
 
 🔗 Control de flujo, estructuras iterativas, funciones y objetos.
 
+- [L1 – Introducción JS](Fundamentos-programacion-Javascript/Introduccion-JS)
+
 ### Programación Avanzada en JavaScript
 
 🔗 ES6+, manipulación del DOM, asincronía y consumo de APIs.
