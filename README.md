@@ -6,6 +6,10 @@ Repositorio académico que documenta la estructura formativa, aprendizajes esper
 
 ## 📦 Estructura del Programa
 
+### Extras
+
+- [Clase Repaso - HTML - CSS - Bootstrap - JQuery](Extra/Clase-repaso/)
+
 ### Fundamentos de Desarrollo Front-End
 
 🔗 Contenidos relacionados con HTML5, CSS, Bootstrap, JavaScript en el navegador y control de versiones.
