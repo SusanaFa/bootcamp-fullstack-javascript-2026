@@ -1,0 +1,72 @@
+:root {
+  --chocolate: #3e2723;
+  --cafe: #5d4037;
+  --crema: #fff8e1;
+  --dorado: #c9a227;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: var(--crema);
+}
+
+.navbar {
+  background-color: var(--chocolate);
+}
+
+.navbar a {
+  color: var(--crema);
+}
+
+/* . -- clases */
+/* # -- id */
+/* etiqueta */
+.hero {
+  min-height: 70vh;
+  background:
+    linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url("https://picsum.photos/1200/700");
+
+  background-size: cover;
+  color: white;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+h2 {
+  text-align: center;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  color: var(--cafe);
+}
+
+.filter-btn {
+  background-color: var(--cafe);
+  color: white;
+  margin: 5px;
+}
+
+.filter-btn:hover {
+  background-color: var(--dorado);
+  color: black;
+}
+
+.card {
+  transition:
+    transform 0.3s,
+    box-shadow 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+footer {
+  background: var(--chocolate);
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
