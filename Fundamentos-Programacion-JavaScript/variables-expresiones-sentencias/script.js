@@ -108,3 +108,45 @@ console.log("false || true: ", false || true);
 // NOT (!) - Invierte el Booleano
 console.log("!true: ", !true);
 console.log("!false: ", !false);
+
+// condicionales
+// if - else if - else
+
+// if(expresion){
+//  código a ejecutar
+// }else if(expresion){
+//  código a ejecutar
+// }else{
+// otro código a ejecutar
+// }
+
+let nota = 3;
+
+if (nota >= 6) {
+  console.log("Excelente, lo hiciste muy bien");
+} else if (nota >= 4) {
+  console.log("Estás aprobado");
+} else {
+  console.log("Lo lamento, estas reprobado");
+}
+
+// condicionales anidadas
+let numeroUsarios = 40;
+
+if (numeroUsarios >= 0) {
+  console.log("Número de usuarios creciendo");
+
+  if (numeroUsarios < 50) {
+    console.log("Estás en la primera mitad");
+
+    if (numeroUsarios < 25) {
+      console.log("Numero de usuarios menor a 25");
+    } else {
+      console.log("Mayor o igual a 25");
+    }
+  } else {
+    console.log("Estás en la segunda mitad");
+  }
+} else {
+  console.log("Número negativo, no tienes usuarios");
+}
