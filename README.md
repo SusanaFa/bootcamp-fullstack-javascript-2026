@@ -27,7 +27,8 @@ Repositorio académico que documenta la estructura formativa, aprendizajes esper
 🔗 Control de flujo, estructuras iterativas, funciones y objetos.
 
 - [L1 – Introducción JS](Fundamentos-Programacion-JavaScript/Introduccion-JS)
-- [L2 – Variables y sentencias](Fundamentos-Programacion-JavaScript/variables-expresiones-sentencias)
+- [L2 – Variables y Sentencias](Fundamentos-Programacion-JavaScript/variables-expresiones-sentencias)
+- [L3 – Arreglos y Ciclos](Fundamentos-Programacion-JavaScript/Arreglos-Ciclos)
 
 ### Programación Avanzada en JavaScript
 
