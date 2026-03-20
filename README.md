@@ -29,6 +29,7 @@ Repositorio académico que documenta la estructura formativa, aprendizajes esper
 - [L1 – Introducción JS](Fundamentos-Programacion-JavaScript/Introduccion-JS)
 - [L2 – Variables y Sentencias](Fundamentos-Programacion-JavaScript/variables-expresiones-sentencias)
 - [L3 – Arreglos y Ciclos](Fundamentos-Programacion-JavaScript/Arreglos-Ciclos)
+- [L4 – Funciones](Fundamentos-Programacion-JavaScript/Funciones)
 
 ### Programación Avanzada en JavaScript
 
