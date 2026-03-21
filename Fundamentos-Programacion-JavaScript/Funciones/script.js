@@ -47,7 +47,6 @@ saludar();
 // funcion que aplica estilos
 function cambiarColorFondo() {
   document.body.style.background = "red";
-  console.log("Hola fulanito");
 }
 
 // funciones declarativas
@@ -139,3 +138,78 @@ function esParDeclarativa(numero) {
 
 console.log(esParDeclarativa(3));
 console.log(esParDeclarativa(8));
+
+// Expresada
+const esParExpresada = function (numero) {
+  if (numero % 2 === 0) {
+    return "Es par";
+  } else {
+    return "Es impar";
+  }
+};
+
+// Flecha
+const esParFlecha = (numero) => {
+  if (numero % 2 === 0) {
+    return "Es par";
+  } else {
+    return "Es impar";
+  }
+};
+
+console.log(esParExpresada(7));
+console.log(esParFlecha(3));
+console.log(esParFlecha(4));
+
+// 5- calcular el monto final luego de hacer descuento e incluir iva
+function descuento(monto, descuento) {
+  let dcto = (monto * descuento) / 100;
+  let IVA = 1.19;
+  let montoConDcto = monto - dcto;
+  let montoFinal = montoConDcto * IVA;
+  return montoFinal;
+}
+
+console.log(descuento(20000, 20));
+// usamos regla de tres
+// monto     porcentaje
+// 20000        100
+//   X           20
+
+// 6- funcion de puntuación
+function puntuacion(nombre) {
+  let num1 = 2;
+  let num2 = 6;
+  return nombre + " anotó " + (num1 + num2);
+}
+
+console.log(puntuacion("Patricio"));
+console.log(puntuacion(890));
+// console.log(num1); //scope de las variables dentro de las funciones
+// una variable declarada dentro de una funcion, no es accesible desde fuera de ella
+
+// 7 - funcion puntuacion anidada
+function puntuacion(nombre) {
+  let num1 = 2;
+  let num2 = 4;
+  function imprimir(nombre) {
+    return nombre + " anotó " + (num1 + num2);
+  }
+  return imprimir(nombre);
+}
+
+console.log(puntuacion());
+
+// 8 - operaciones en funciones anidadas
+function operaciones(numero) {
+  function cuadrado() {
+    return numero * numero;
+  }
+  function cubo() {
+    return numero * numero * numero;
+  }
+  console.log("Cuadrado. :", cuadrado());
+  console.log("Cubo. :", cubo());
+}
+
+operaciones(3);
