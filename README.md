@@ -37,7 +37,7 @@ Repositorio académico que documenta la estructura formativa, aprendizajes esper
 🔗 ES6+, manipulación del DOM, asincronía y consumo de APIs.
 
 - [L1 – POO](Programacion-Avanzada-JavaScript/POO)
-- [L2 – Variables y Sentencias](Programacion-Avanzada-JavaScript/Caractersticas-ES6+)
+- [L2 – Características ES6+](Programacion-Avanzada-JavaScript/Caractersticas-ES6+)
 
 ### Fundamentos de Bases de Datos Relacionales
 
