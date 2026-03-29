@@ -30,10 +30,14 @@ Repositorio académico que documenta la estructura formativa, aprendizajes esper
 - [L2 – Variables y Sentencias](Fundamentos-Programacion-JavaScript/variables-expresiones-sentencias)
 - [L3 – Arreglos y Ciclos](Fundamentos-Programacion-JavaScript/Arreglos-Ciclos)
 - [L4 – Funciones](Fundamentos-Programacion-JavaScript/Funciones)
-- [L5 - Objetos]
+- [L5 - Objetos](Fundamentos-Programacion-JavaScript/Objetos)
+
 ### Programación Avanzada en JavaScript
 
 🔗 ES6+, manipulación del DOM, asincronía y consumo de APIs.
+
+- [L1 – POO](Programacion-Avanzada-JavaScript/POO)
+- [L2 – Variables y Sentencias](Programacion-Avanzada-JavaScript/Caractersticas-ES6+)
 
 ### Fundamentos de Bases de Datos Relacionales
 
