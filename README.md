@@ -9,6 +9,7 @@ Repositorio académico que documenta la estructura formativa, aprendizajes esper
 ### Extras
 
 - [Clase Repaso - HTML - CSS - Bootstrap - JQuery](Extra/Clase-repaso/)
+- [Clase Repaso - HTML - CSS - Bootstrap - JS](Extra/Clase-repaso-calculadora/)
 
 ### Fundamentos de Desarrollo Front-End
 
