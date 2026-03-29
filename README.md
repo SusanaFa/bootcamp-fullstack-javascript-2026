@@ -9,6 +9,7 @@ Repositorio académico que documenta la estructura formativa, aprendizajes esper
 ### Extras
 
 - [Clase Repaso - HTML - CSS - Bootstrap - JQuery](Extra/Clase-repaso/)
+- [Clase Repaso - HTML - CSS - Bootstrap - JS ](Extra/Clase-repaso-calculadora/)
 
 ### Fundamentos de Desarrollo Front-End
 
@@ -30,10 +31,14 @@ Repositorio académico que documenta la estructura formativa, aprendizajes esper
 - [L2 – Variables y Sentencias](Fundamentos-Programacion-JavaScript/variables-expresiones-sentencias)
 - [L3 – Arreglos y Ciclos](Fundamentos-Programacion-JavaScript/Arreglos-Ciclos)
 - [L4 – Funciones](Fundamentos-Programacion-JavaScript/Funciones)
-- [L5 - Objetos]
+- [L5 - Objetos](Fundamentos-Programacion-JavaScript/Objetos)
+
 ### Programación Avanzada en JavaScript
 
 🔗 ES6+, manipulación del DOM, asincronía y consumo de APIs.
+
+- [L1 - POO](Programacion-Avanzada-JavaScript/POO)
+- [L2 - Características ES6+](Programacion-Avanzada-JavaScript/Caractersticas-ES6+)
 
 ### Fundamentos de Bases de Datos Relacionales
 
