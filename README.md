@@ -39,6 +39,7 @@ Repositorio académico que documenta la estructura formativa, aprendizajes esper
 
 - [L1 – POO](Programacion-Avanzada-JavaScript/POO)
 - [L2 – Características ES6+](Programacion-Avanzada-JavaScript/Caractersticas-ES6+)
+- [L3 - DOM](Programacion-Avanzada-JavaScript/DOM)
 
 ### Fundamentos de Bases de Datos Relacionales
 
