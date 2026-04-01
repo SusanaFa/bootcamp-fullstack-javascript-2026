@@ -1,0 +1,83 @@
+body {
+  font-family: Arial, sans-serif;
+  padding: 20px;
+  line-height: 1.5;
+}
+
+section {
+  border: 1px solid #ccc;
+  padding: 16px;
+  margin-bottom: 20px;
+  border-radius: 8px;
+}
+
+h2 {
+  margin-top: 0;
+}
+
+.caja {
+  width: 150px;
+  height: 150px;
+  background-color: gray;
+  margin-top: 10px;
+  transition: all 0.3s ease;
+}
+
+.tarjeta {
+  width: 220px;
+  padding: 16px;
+  border: 1px solid #aaa;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  margin-top: 10px;
+}
+
+.destacado {
+  background-color: black;
+  color: white;
+  padding: 10px;
+  font-weight: bold;
+}
+
+.oculto {
+  display: none;
+}
+
+#btnArriba {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  display: none;
+  padding: 10px 14px;
+  cursor: pointer;
+}
+
+.zona-scroll {
+  height: 900px;
+  background: linear-gradient(white, #e8f0ff);
+  padding: 20px;
+  margin-top: 20px;
+}
+
+.item {
+  cursor: pointer;
+  padding: 6px;
+  border-bottom: 1px solid #ddd;
+}
+
+.completada {
+  text-decoration: line-through;
+  color: gray;
+}
+
+.color-btn {
+  margin-right: 8px;
+}
+
+.error {
+  color: red;
+}
+
+.ok {
+  color: green;
+}

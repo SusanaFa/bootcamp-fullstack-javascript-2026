@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./assets/css/styles.css" />
+  </head>
+  <body>
+    <h1>Ejercicios de manipulación de DOM</h1>
+    <p id="mensajeCarga"></p>
+
+    <section>
+      <h2>Lista inicial</h2>
+      <ul id="listaFrutas"></ul>
+    </section>
+
+    <section>
+      <h2>input - Contador de caracteres</h2>
+      <textarea id="comentario" placeholder="Escribe un comentario"></textarea>
+      <p id="contadorCaracteres">Caracteres: 0</p>
+    </section>
+
+    <section>
+      <h2>input - vista previa de nombre</h2>
+      <input type="text" id="nombrePreview" placeholder="Escribe tu nombre" />
+      <p id="saludoPreview">Hola, visitante</p>
+    </section>
+
+    <section>
+      <h2>change - cambiar color con select</h2>
+      <select id="selectorColor">
+        <option value="">Seleccione un color</option>
+        <option value="tomato">Rojo</option>
+        <option value="skyblue">Azul</option>
+        <option value="green">Verde</option>
+      </select>
+      <div id="cajaColor" class="caja"></div>
+    </section>
+
+    <section>
+      <h2>submit - formulario simple</h2>
+      <form id="formularioRegistro">
+        <input type="text" id="nombreRegistro" placeholder="Nombre" />
+        <input type="text" id="correoRegistro" placeholder="correo" />
+        <button type="submit">Enviar formulario</button>
+      </form>
+
+      <p id="respuestaFormulario"></p>
+    </section>
+
+    <section>
+      <h2>keydown - Agregar tarea con Enter</h2>
+      <input
+        type="text"
+        id="entradaTareaEnter"
+        placeholder="Escribe una tarea y presiona Enter"
+      />
+      <ul id="listaTareasEnter"></ul>
+    </section>
+
+    <script src="./assets/js/script.js"></script>
+  </body>
+</html>
