@@ -41,6 +41,7 @@ Repositorio académico que documenta la estructura formativa, aprendizajes esper
 - [L2 – Características ES6+](Programacion-Avanzada-JavaScript/Caractersticas-ES6+)
 - [L3 – DOM](Programacion-Avanzada-JavaScript/DOM)
 - [L4 – Programación Asíncrona](Programacion-Avanzada-JavaScript/Programacion-asincrona)
+- [L5 – API](Programacion-Avanzada-JavaScript/API's)
 
 ### Fundamentos de Bases de Datos Relacionales
 
