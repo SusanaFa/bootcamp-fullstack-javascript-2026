@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Consumo de APIs con JavaScript</title>
+    <link rel="stylesheet" href="./assets/css/style.css" />
+  </head>
+  <body>
+    <main class="container">
+      <h1>Ejercicios de Consumo de APIs con JavaScript</h1>
+      <p class="intro">
+        Ejemplos desde lo más básico hasta casos un poco más completos,
+        utilizando Fetch, JSON, manejo de errores y render al DOM.
+      </p>
+
+      <section class="card-section">
+        <h2>1) Fetch básico: traer un post</h2>
+        <p>Objetivo: comprender el flujo fetch → response → json() → data</p>
+        <button id="btnPost">Traer post 1</button>
+        <div id="resultadoPost" class="resultado"></div>
+      </section>
+
+      <section class="card-section">
+        <h2>2) Listar varios posts</h2>
+        <p>Objetivo: recorrer un arreglo de datos recibido desde una API</p>
+        <button id="btnPosts">Traer 5 posts</button>
+        <div id="resultadoPosts" class="resultado"></div>
+      </section>
+
+      <section class="card-section">
+        <h2>3) Manejo de errores</h2>
+        <p>Objetivo: validar response.ok y controlar errores</p>
+        <button id="btnError">Probar error</button>
+        <div id="resultadoError" class="resultado"></div>
+      </section>
+
+      <section class="card-section">
+        <h2>4) The Cat API</h2>
+        <p>Objetivo: consumir una API externa y mostrar una imagen</p>
+        <button id="btnCat">Traer gatito</button>
+        <div id="resultadoCat" class="resultado"></div>
+      </section>
+
+      <section class="card-section">
+        <h2>5) PokéAPI</h2>
+        <p>
+          Objetivo: buscar un Pokémon según el nombre ingresado por el usuario
+        </p>
+        <div class="input-group">
+          <input type="text" id="pokemonInput" placeholder="Ejemplo: pikachu" />
+          <button id="btnPokemon">Buscar Pokémon</button>
+        </div>
+        <div id="resultadoPokemon" class="resultado"></div>
+      </section>
+
+      <section class="card-section">
+        <h2>6) Async/Await con usuarios</h2>
+        <p>
+          Objetivo: consumir una API usando async/await en lugar de then/catch
+        </p>
+        <button id="btnUsuariosAsync">Traer usuarios</button>
+        <div id="resultadoUsuariosAsync" class="resultado"></div>
+      </section>
+
+      <section class="card-section">
+        <h2>7) Ver JSON en pantalla</h2>
+        <p>
+          Objetivo: observar la estructura real del objeto antes de trabajarlo
+        </p>
+        <button id="btnJsonRaw">Ver JSON</button>
+        <pre id="resultadoJsonRaw" class="json-box"></pre>
+      </section>
+    </main>
+
+    <script src="./assets/js/script.js"></script>
+  </body>
+</html>
