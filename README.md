@@ -48,6 +48,7 @@ Repositorio académico que documenta la estructura formativa, aprendizajes esper
 🔗 Modelamiento, SQL, DDL, DML y consultas estructuradas.
 
 - [L1 y L2 – Introducción SQL](Fundamentos-Bases-de-Datos-Relacionales/practica-inicial-bd-relacional)
+- [L3 – DML](Fundamentos-Bases-de-Datos-Relacionales/DML)
 
 ### Desarrollo de Aplicaciones Web Node Express
 
