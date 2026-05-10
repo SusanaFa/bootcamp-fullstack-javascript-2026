@@ -1,0 +1,16 @@
+<section>
+  <h1>{{titulo}}</h1>
+
+  <p>
+    A continuación se muestra una lista de servicios enviados desde el servidor.
+  </p>
+
+  <ul>
+    {{#each servicios}}
+      <li>
+        <h3>{{nombre}}</h3>
+        <p>{{descripcion}}</p>
+      </li>
+    {{/each}}
+  </ul>
+</section>

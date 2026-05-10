@@ -1,0 +1,20 @@
+[
+  {
+    "id": 1,
+    "nombre": "Lasaña",
+    "precio": 13000,
+    "categoria": "Comida italiana"
+  },
+  {
+    "id": 2,
+    "nombre": "Lomo saltado",
+    "precio": 14900,
+    "categoria": "Comida peruana"
+  },
+  {
+    "id": 3,
+    "nombre": "Empanada de pino",
+    "precio": 5000,
+    "categoria": "Comida chilena"
+  }
+]
