@@ -56,9 +56,17 @@ Repositorio académico que documenta la estructura formativa, aprendizajes esper
 
 🔗 Servidores, NPM, plantillas y persistencia básica.
 
+- [L1 – Características Node](Desarrollo-Aplicaciones-Web-Node-Express/Caracteristicas-node)
+- [L2 – Instalacción Node](Desarrollo-Aplicaciones-Web-Node-Express/Instalacion-node)
+- [L3 – NPM](Desarrollo-Aplicaciones-Web-Node-Express/NPM)
+- [L4 – Contenido Estático](Desarrollo-Aplicaciones-Web-Node-Express/Contenido-estatico-motor-plantilla)
+- [L5 – Persistencia JSON](Desarrollo-Aplicaciones-Web-Node-Express/Persistencia-datos)
+
 ### Acceso a Datos en Aplicaciones Node
 
 🔗 CRUD, ORM y relaciones entre entidades.
+
+- [L1 – Conexión a PostgreSQL](Acceso-Datos-Aplicaciones-Node/Conexion-db)
 
 ### Implementación de API Backend Node Express
 
