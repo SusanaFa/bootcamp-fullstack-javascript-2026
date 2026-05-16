@@ -67,6 +67,8 @@ Repositorio académico que documenta la estructura formativa, aprendizajes esper
 🔗 CRUD, ORM y relaciones entre entidades.
 
 - [L1 – Conexión a PostgreSQL](Acceso-Datos-Aplicaciones-Node/Conexion-db)
+- [L2 – Obtener información BD](Acceso-Datos-Aplicaciones-Node/Obtener-informacion-bd)
+- [L3 – Manipular información BD](Acceso-Datos-Aplicaciones-Node/Manipular-informacion-bd)
 
 ### Implementación de API Backend Node Express
 
