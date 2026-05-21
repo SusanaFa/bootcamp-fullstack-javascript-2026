@@ -69,6 +69,7 @@ Repositorio académico que documenta la estructura formativa, aprendizajes esper
 - [L1 – Conexión a PostgreSQL](Acceso-Datos-Aplicaciones-Node/Conexion-db)
 - [L2 – Obtener información BD](Acceso-Datos-Aplicaciones-Node/Obtener-informacion-bd)
 - [L3 – Manipular información BD](Acceso-Datos-Aplicaciones-Node/Manipular-informacion-bd)
+- [L4 – Transaccionalidad](Acceso-Datos-Aplicaciones-Node/Transacciones)
 
 ### Implementación de API Backend Node Express
 
