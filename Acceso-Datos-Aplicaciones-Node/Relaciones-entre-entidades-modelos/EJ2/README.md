@@ -69,7 +69,7 @@ npm install --save-dev nodemon
 mkdir config models routes controllers services
 ```
 
-## nota importante antes de continuar al próximo paso:
+## Nota importante antes de continuar al próximo paso:
 
 Si estás usando Git Bash:
 
