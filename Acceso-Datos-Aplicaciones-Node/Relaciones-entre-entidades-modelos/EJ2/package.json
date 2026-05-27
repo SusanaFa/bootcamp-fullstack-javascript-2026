@@ -1,0 +1,24 @@
+{
+  "name": "ej2",
+  "version": "1.0.0",
+  "description": "m7-l6-relaciones/\r │\r ├── app.js\r ├── package.json\r ├── .env\r ├── .gitignore\r │\r ├── config/\r │ └── database.js\r │\r ├── models/\r │ ├── Producto.js\r │ ├── Movimiento.js\r │ └── index.js\r │\r ├── routes/\r │ ├── productos.routes.js\r │ └── movimientos.routes.js\r │\r ├── controllers/\r │ ├── productos.controller.js\r │ └── movimientos.controller.js\r │\r └── services/\r ├── productos.service.js\r └── movimientos.service.js",
+  "main": "app.js",
+  "type": "module",
+  "scripts": {
+    "start": "node app.js",
+    "dev": "nodemon app.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^17.4.2",
+    "express": "^5.2.1",
+    "pg": "^8.21.0",
+    "pg-hstore": "^2.3.4",
+    "sequelize": "^6.37.8"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.14"
+  }
+}
