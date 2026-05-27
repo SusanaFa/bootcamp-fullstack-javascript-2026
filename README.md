@@ -70,6 +70,8 @@ Repositorio académico que documenta la estructura formativa, aprendizajes esper
 - [L2 – Obtener información BD](Acceso-Datos-Aplicaciones-Node/Obtener-informacion-bd)
 - [L3 – Manipular información BD](Acceso-Datos-Aplicaciones-Node/Manipular-informacion-bd)
 - [L4 – Transaccionalidad](Acceso-Datos-Aplicaciones-Node/Transacciones)
+- [L5 – ORM](Acceso-Datos-Aplicaciones-Node/ORM)
+- [L6 – Relaciones](Acceso-Datos-Aplicaciones-Node/Relaciones-entre-entidades-modelos)
 
 ### Implementación de API Backend Node Express
 
