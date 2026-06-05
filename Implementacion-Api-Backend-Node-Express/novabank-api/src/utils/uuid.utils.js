@@ -1,0 +1,9 @@
+//   Valida si un string tiene formato UUID.
+//   Esto ayuda antes de consultar por IDs que vienen desde params o body.
+
+export const isValidUUID = (value) => {
+  const uuidRegex =
+    /^[0-9a-f]{8}-[0-9a-f]{4}-[1-5][0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}$/i;
+
+  return uuidRegex.test(value);
+};
