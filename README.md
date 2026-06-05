@@ -75,7 +75,9 @@ Repositorio académico que documenta la estructura formativa, aprendizajes esper
 
 ### Implementación de API Backend Node Express
 
-🔗 Arquitectura REST, subida de archivos y seguridad con JWT.
+🔗 Proyecto integrador del módulo. Aplicación práctica de arquitectura por capas, middleware, validaciones, modelos, servicios, controladores y rutas.
+
+- [M8 – Proyecto Integrador NovaBank API](Implementacion-Api-Backend-Node-Express/novabank-api)
 
 ### Desarrollo de Portafolio de un Producto Digital
 
