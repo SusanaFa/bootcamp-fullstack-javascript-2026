@@ -3,6 +3,10 @@ import fileUpload from "express-fileupload";
 import path from "path";
 import { fileURLToPath } from "url";
 
+import routes from "./routes/index.routes.js";
+import errorMiddleware from "./middlewares/error.middleware.js";
+import ApiError from "./utils/ApiError.js";
+
 const app = express();
 
 const __filename = fileURLToPath(import.meta.url);
@@ -35,12 +39,12 @@ app.get("/", (req, res) => {
   });
 });
 
-// app.use("/api/v1", routes);
+app.use("/api/v1", routes);
 
-// app.use((req, res, next) =>{
-// next(new ApiError(404, "Ruta no encontrada"))
-// });
+app.use((req, res, next) => {
+  next(new ApiError(404, "Ruta no encontrada"));
+});
 
-// app.use(errorMiddleware);
+app.use(errorMiddleware);
 
 export default app;
